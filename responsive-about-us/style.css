@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fdfdfd;
+}
+
+.section-wrapper {
+  background: url(./nature.jpg) no-repeat left;
+  background-size: 55%;
+  padding: 100px 0;
+  background-color: #fdfdfd;
+}
+
+.content-wrapper {
+  padding: 100px;
+  float: right;
+  width: 55%;
+  background-color: #fdfdfd;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-wrapper {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-wrapper {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .content-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-wrapper {
+    padding: 0;
+  }
+  .content-wrapper {
+    width: 100%;
+    padding: 40px;
+  }
+}
