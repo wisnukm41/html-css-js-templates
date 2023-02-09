@@ -1,0 +1,25 @@
+body{
+    border: 2px solid pink;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 12px;
+    align-items: center;
+}
+
+div {
+    border: 2px solid orange;
+    height: 300px;
+}
+
+.item-1 {
+    grid-column: 2 / 6;
+}
+
+.item-2{
+    grid-column: span 6;
+}

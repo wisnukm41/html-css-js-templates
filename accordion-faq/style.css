@@ -74,7 +74,7 @@ body{
     opacity: 1;
     padding: 20px;
     margin: 12px 0;
-
+    transition: .5s linear;
 }
 
 .item:target .icon::after{
